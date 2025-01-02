@@ -1,0 +1,183 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c975ea; /* Same purple background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #b388eb;
+}
+
+/* Container and Item Styles */
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #ca77eb; /* Matches the body background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Inherit text color */
+}
+
+a.item {
+    display: block; /* Ensure the anchor takes up the full `.item` space */
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth zoom and shadow */
+}
+
+a.item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Smooth zoom for the image */
+}
+
+a.item:hover {
+    transform: scale(1.1); /* Zoom-in effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More shadow for emphasis */
+}
+
+a.item:hover img {
+    transform: scale(1.1); /* Zoom the image alongside the container */
+}
+
+/* Login Container */
+.login-container {
+    background-color: white;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 350px;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 10px; 
+}
+
+.logo-img {
+    width: 130px;
+    height: auto; 
+    margin-bottom: 2px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 130px;
+    padding: 10px;
+    background-color: #e74390;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e270a5; /* Lighter color on hover */
+    color: #fff; /* Ensures text color is still readable */
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .feature {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    button {
+        width: 100%;
+    }
+}

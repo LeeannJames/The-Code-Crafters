@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Code Crafters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>THE CODE CRAFTERS</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="grouppage.html">Group</a></li>
+                <li><a href="#contact">Nursing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container" id="profiles">
+        <a href="Profiles/Alejandro, Veronica/Profile Page.html" class="item">
+            <img src="Profile Images/Alejandro .jpeg" alt="Image 1">
+            <p>Alejandro, Veronica</p>
+        </a>
+        <a href="Profiles/Erasga, Christine Isabel/Profile Page.html" class="item">
+            <img src="Profile Images/Erasga.jpg" alt="Image 2">
+            <p>Erasga, Christine Isabel</p>
+        </a>
+        <a href="Profiles/Gambala, Ma. Clarissa/index.html" class="item">
+            <img src="Profile Images/Gambala.jpg" alt="Image 1">
+            <p>Gambala, Ma. Clarissa</p>
+        </a>
+        <a href="Profiles/Ligon, Jazzleen Rose/profilepage.html" class="item">
+            <img src="Profile Images/Ligon.jpg" alt="Image 2">
+            <p>Ligon, Jazzleen Rose</p>
+        </a>
+        <a href="Profiles/Satur, Natasha Mae/PROFILE PAGE.html" class="item">
+            <img src="Profile Images/Satur.jpg" alt="Image 1">
+            <p>Satur, Natasha Mae</p>
+        </a>
+        <a href="Profiles/Zulfiqar, Liliana/Profile Page.html" class="item">
+            <img src="Profile Images/Zulqifar_.jpg" alt="Image 2">
+            <p>Zulqifar, Liliana</p>
+        </a>
+        <a href="Profiles/De Guzman, Kassandra Nicole/commission.html" class="item">
+            <img src="Profiles/De Guzman, Kassandra Nicole/prof.jpeg" alt="Image 2">
+            <p>Zulqifar, Liliana</p>
+        </a>
+        <a href="#" class="item">
+            <img src="Profiles/adduser.jpg" alt="Image 2">
+            <p>Add a Profile</p>
+        </a>
+
+    <style>
+    /* Global Styles */
+    * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #c975ea, #e0aaff);
+            color: #333;
+            padding-top: 130px;
+        }
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #b388eb;
+        }
+    
+    /* Features Section */
+    #features {
+        padding: 40px 20px;
+        text-align: center;
+    }
+    
+    .feature {
+        background-color: #fff;
+        padding: 20px;
+        margin: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .feature:hover {
+        transform: scale(1.05);
+    }
+    
+    button {
+        padding: 10px 20px;
+        border: none;
+        background-color: #e74390;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    
+    button:hover {
+        background-color:  #e74390;
+    }
+    
+    /* Centered Logout Button */
+    button#logoutBtn {
+        display: block;
+        width: 130px;
+        padding: 10px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 20px auto;
+    }
+    
+    button#logoutBtn:hover {
+        background-color: #e74390;
+    }
+    
+        /* Footer */
+        footer {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #b388eb;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    
+        </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const addProfileLink = document.querySelector('a[href="#"]');
+            addProfileLink.addEventListener('click', function(event) {
+                event.preventDefault();
+                alert('This feature will be available in the future.');
+            });
+        });
+    </script>
+    </div>
+</body>
+</html>

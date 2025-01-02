@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Diary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0e0f6; /* Light purple background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .diary-container {
+            background-color: #fff; /* White background for the content */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 60%;
+            max-width: 600px;
+            z-index: 2;
+        }
+
+        h1 {
+            color: #ff1493; /* Pink color */
+            font-size: 2.5rem;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #8a2be2; /* Purple color */
+            margin: 20px 0;
+            font-size: 1.2rem;
+            text-align: justify; /* Justified alignment for the quote */
+        }
+
+        .reflection {
+            color: #444;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #7a4e9f; /* Soft purple color */
+            text-align: justify; /* Justified alignment for the reflection */
+        }
+
+        .signature {
+            font-size: 1rem;
+            color: #ff1493;
+            font-style: italic;
+            margin-top: 30px;
+            text-align: right;
+        }
+
+        button {
+            background-color: #ff1493; /* Pink background for the button */
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #e60073; /* Darker pink for hover */
+        }
+
+        /* Styling for the YouTube audio embed */
+        .music-player {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ff1493;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            width: 100%;
+        }
+
+        .music-player iframe {
+            width: 100%;
+            height: 80px; /* Controls the height of the audio player */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="diary-container">
+        <h1>My Diary</h1>
+        <p class="reflection">
+            Dear Diary,<br><br>
+            "Only in the darkness can you see the stars." - Martin Luther King Jr.<br><br>
+            Para sa akin, yung quote na yan reminds me na kahit sa mga times na madilim o mahirap, dun ko natutuklasan kung gaano kalaki yung potential ko. 
+            Gusto ko maging military nurse, pero kung hindi man yun mangyari, gusto ko pa rin maabot yung mga pangarap ko, tulad ng pagiging astronaut. 
+            Kasi diba, yung stars 🌟 sa langit, they remind me na may brighter future pa kahit gaano kadilim ang buhay minsan. 
+            Kaya nga, kahit sa mga dark moments, like those times I doubt my dreams, I remember the 🌟 stars, na nagsasabing may hope pa.<br><br>
+            With love, Clare
+        </p>
+        <button onclick="goBack()">Back to Profile</button>
+        <button onclick="window.location.href='../../profilelist.html'" class="last-page-btn">Back to List</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.location.href = 'index.html'; // Replace 'index.html' with the actual URL of your index page
+        }
+    </script>
+</body>
+</html>
