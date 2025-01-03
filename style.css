@@ -51,9 +51,9 @@ header nav ul li a:hover {
 /* Container and Item Styles */
 .container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    width: 100%;
+    width: 20%;
     max-width: 1200px;
     background-color: #ca77eb; /* Matches the body background */
     padding: 20px;
