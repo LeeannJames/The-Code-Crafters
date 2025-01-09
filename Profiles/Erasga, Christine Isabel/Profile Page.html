@@ -1,174 +1,164 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>My Profile Page</title>
-    <script>
-      function changeContent(content) {
-        document.getElementById("journal-content").innerHTML = content;
-      }
-    </script>
-  </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <h1>Welcome to My Profile Page!</h1>
-      </div>
+<!DOCTYPE html> <html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>My Profile Page</title>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+body {
+font-family: "Roboto", sans-serif; margin: 0;
+padding: 0;
+line-height: 1.6; background-color: #ffe4e6; color: #333;
+} .container {
+width: 90%; max-width: 1200px; margin: 20px auto;
+} .header {
+text-align: center;
+margin-bottom: 30px; }
+.header h1 { font-size: 2.5rem; color: #d63384; margin: 0;
+} h2 {
+font-size: 1.8rem; color: #b82e68; margin-bottom: 15px;
+}
+.profile, .favorites, .journal {
+background-color: #fff;
+border-radius: 10px;
+padding: 20px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 30px;
+} .profile {
+display: flex; align-items: center; justify-content: start;
 
-      <h2>About Me</h2>
-      <div class="profile">
-        <img src="profile page .jpg" alt="height=300px" width="150px">
-        <div class="profile-description">
-          <p>
-            I am <b>Christine Isabel E. Erasga</b>, <b>19 years old</b>, im in
-            my first year <b>Bachelor of science in nursing</b>. Im taking this
-            course to pursue my childhood dream. And im determined to finish
-            this course, because despite of my hardship theres mixed me that
-            feel enjoying with this course. And i know little me is proud of me
-            because i fought of this course.
-          </p>
-        </div>
-      </div>
+ flex-wrap: nowrap;
+margin-bottom: 30px;
+background-color: #fff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.profile img {
+width: 200px; height: 200px; border-radius: 50%; margin-right: 20px; flex-shrink: 0;
+}
+.profile-description { flex: 1;
+font-size: 1.2rem; color: #555;
+}
+.favorites .favorite-item { display: flex; align-items: center; margin-bottom: 20px;
+}
+.favorites .favorite-item img {
+width: 125px; height: 125px; border-radius: 10px; margin-right: 15px;
+}
+.favorites .favorite-description h3 {
+font-size: 1.5rem;
+color: #d63384; }
+.favorites .favorite-description p { font-size: 1rem;
+color: #555;
+} .journal {
+text-align: center; }
+.journal img {
+width: 250px; height: 250px; border-radius: 10px; margin-right: 15px;
 
-      <h2>Favorites</h2>
-      <div class="favorites">
-        <div class="favorite-item">
-          <img src="sa listening music.jpg" alt="height=300px" width="150px">
-          <div class="favorite-description">
-            <h3>Music</h3>
-            <p>
-              Listening to music is one of my favorite things to do, i found my
-              self calm when i listening music i guess its one of my comfort
-              zone.
-            </p>
-          </div>
-        </div>
+ }
+.journal button {
+background-color: #d63384; color: #fff;
+border: none;
+padding: 10px 20px; font-size: 16px; border-radius: 5px;
+cursor: pointer;
+transition: all 0.3s ease; }
+.journal button:hover { background-color: #b82e68;
+}
+.journal p {
+margin-bottom: 15px; font-size: 1.1rem; color: #555;
+}
+@media (max-width: 768px) {
+.profile,
+.favorites .favorite-item {
+flex-direction: row;
+text-align: center; }
+.profile img,
+.favorites .favorite-item img {
+margin-bottom: 15px; }
+} </style>
+<script>
+function changeContent(content) {
+document.getElementById("journal-content").innerHTML = content; }
+</script> </head> <body>
+<div class="container"> <div class="header">
+<h1>Welcome to My Profile Page!</h1> </div>
+<h2>About Me</h2> <div class="profile">
+<img src="../../Profile Images/Erasga.jpg" alt="Author's Picture" /> <div class="profile-description">
+<p>
+I am <b>Christine Isabel E. Erasga</b>, <b>19 years old</b>, im in
 
-        <div class="favorite-item">
-          <img src="sa seeing nature.jpg" alt="height=300px" width="150px">
-          <div class="favorite-description">
-            <h3>Nature</h3>
-            <p>
-              Going to nature specially when i find myself exhausted. I like to
-              go somewhere and feel a fresh air for me its a therapy. Because i
-              feel a peace on it.
-            </p>
-          </div>
-        </div>
+ my first year <b>Bachelor of science in nursing</b>. Im taking this course to pursue my childhood dream. And im determined to finish this course, because despite of my hardship theres mixed me that feel enjoying with this course. And i know little me is proud of me because i fought of this course.
+</p> </div>
+</div>
+<h2>Favorites</h2> <div class="favorites">
+<div class="favorite-item">
+<img src="../Erasga, Christine Isabel/sa listening music.jpg" alt="Music" /> <div class="favorite-description">
+<h3>Music</h3> <p>
+Listening to music is one of my favorite things to do, i found my self calm when i listening music i guess its one of my comfort zone.
+</p> </div>
+</div>
+<div class="favorite-item">
+<img src="../Erasga, Christine Isabel/sa seeing nature.jpg" alt="Nature" /> <div class="favorite-description">
+<h3>Nature</h3> <p>
+Going to nature specially when i find myself exhausted. I like to go somewhere and feel a fresh air for me its a therapy. Because i feel a peace on it.
+</p> </div>
+</div>
+<div class="favorite-item">
+<img src="../Erasga, Christine Isabel/sa pink stuff.jpg" alt="Pink Stuff" /> <div class="favorite-description">
+<h3>Pink Stuff</h3>
+<p>Seeing pink things always brings a smile to my face.</p> </div>
+</div> </div>
+<div class="journal"> <h2>Journal</h2>
+<div id="journal-content">
+<p>
+Discover my thoughts on Coding Fundamentals, my alternative career
 
-        <div class="favorite-item">
-          <img src="sa pink stuff.jpg" alt="height=300px" width="150px">
-          <div class="favorite-description">
-            <h3>Pink Stuff</h3>
-            <p>Seeing pink things always brings a smile to my face.</p>
-          </div>
-        </div>
-      </div>
+ ideas, future plans, and my experiences in Nursing School. </p>
+</div>
+<div class="buttons">
+<button onclick="changeContent(codingFundamentals)">Page 1</button> <button onclick="changeContent(notNursing)">Page 2</button>
+<button onclick="changeContent(futurePlans)">Page 3</button>
+<button onclick="changeContent(nursing)">Page 4</button>
+</div> </div>
+</div>
+<script>
+const codingFundamentals = `
+<h2>What I Learned in the Coding Fundamental Subject</h2> <p>
+What I learn in Coding Fundamentals is to have a lot of patience in every code. (Kidding aside.) Knowledge that you will learn in every code in a computer is a big advantage. I learn that everything you see on each side of the computer has a meaning and that each word in the search list has a name that you can call. That HTML, CSS, and other code has advantages for us that maybe we can use in the future. We can't say that we are nursing students; we don't need this to study.
+But it's a big no. We study coding because it's crucial. We never know that what if? We can use this in the future. Maybe it's a little hard
+for me to understand each code in this subject, especially for me; it needs a maximum amount of time to create a code, to create a website. I'm not familiar with each code. I need to understand more about the real advantages and importance of this subject. And I'm willing to
+learn more. </p>
+`;
+const notNursing = `
+<img src="../Erasga, Christine Isabel/what i am if im not a nursing.jpg" alt="ID" /> <div class="profile-description">
+<h2>What I am if I'm not a nursing student</h2> <p>
+Hindi ako papayag, ipipilit ang BS Nursing. (Kidding aside.) If I am
+not here in this course, I am pursuing a BS Biology Course. I know everyone in you was confused. This is my second course I have taken.
+If I continue pursuing BS Biology, I am now in my second year of college. But dahil sa kakulitan ko at paglaban sa gusto kong tahakin landas, ako ngayon ay nasa kurso na aking pinangarap. Success naman ang paglaban ko. Sabi nga nila, if you like, you will fight for it.
+And that's actually what I did. My life in biology is actually happy
+and exciting because I met a friend that made my first year of
+college memorable, and they actually colored my life. But thats not.
+I really like talaga; even I encourage myself to hug that course.
 
-      <div class="journal">
-        <h2>Journal</h2>
-        <div id="journal-content">
-          <p>
-            Discover my thoughts on Coding Fundamentals, my alternative career
-            ideas, future plans, and my experiences in Nursing School.
-          </p>
-        </div>
-        <div class="buttons">
-          <button onclick="changeContent(codingFundamentals)">Page 1</button>
-          <button onclick="changeContent(notNursing)">Page 2</button>
-          <button onclick="changeContent(futurePlans)">Page 3</button>
-          <button onclick="changeContent(nursing)">Page 4</button>
-          <a href="../../profilelist.html" class="buttons">Back to List</a>
-          <br><br>
-
-        </div>
-      </div>
-    </div>
-
-    <script>
-      const codingFundamentals = `
-        <h2>What I Learned in the Coding Fundamental Subject</h2>
-        <p>
-          What I learn in Coding Fundamentals is to have a lot of patience in
-          every code. (Kidding aside.) Knowledge that you will learn in every
-          code in a computer is a big advantage. I learn that everything you see
-          on each side of the computer has a meaning and that each word in the
-          search list has a name that you can call. That HTML, CSS, and other
-          code has advantages for us that maybe we can use in the future. We
-          can't say that we are nursing students; we don't need this to study.
-          But it's a big no. We study coding because it's crucial. We never know
-          that what if? We can use this in the future. Maybe it's a little hard
-          for me to understand each code in this subject, especially for me; it
-          needs a maximum amount of time to create a code, to create a website.
-          I'm not familiar with each code. I need to understand more about the
-          real advantages and importance of this subject. And I'm willing to
-          learn more.
-        </p>
-      `;
-
-      const notNursing = `
-        <img src="what i am if im not a nursing.jpg" alt="height=300px" width="150px" />
-        <div class="profile-description">
-          <h2>What I am if I'm not a nursing student</h2>
-          <p>
-            Hindi ako papayag, ipipilit ang BS Nursing. (Kidding aside.) If I am
-            not here in this course, I am pursuing a BS Biology Course. I know
-            everyone in you was confused. This is my second course I have taken.
-            If I continue pursuing BS Biology, I am now in my second year of
-            college. But dahil sa kakulitan ko at paglaban sa gusto kong tahakin
-            landas, ako ngayon ay nasa kurso na aking pinangarap. Success naman
-            ang paglaban ko. Sabi nga nila, if you like, you will fight for it.
-            And that's actually what I did. My life in biology is actually happy
-            and exciting because I met a friend that made my first year of
-            college memorable, and they actually colored my life. But thats not.
-            I really like talaga; even I encourage myself to hug that course.
-            But even now I'm in my dream course. A half of me is a little bit
-            broken for missing my first ever college friend. It's so different
-            from now. It's so far from now. But its really fine because im now
-            ỉn reality a reality of chasing my dream. And I know my BS Biology
-            friend is actually happy to also be chasing their dreams.
-          </p>
-        </div>
-      `;
-
-      const futurePlans = `
-        <h2>My Future Plans</h2>
-        <p>
-          Since I was a kid, I dreamed to become in a medical field. A doctor
-          with a specialization in pediatrics or cardiology. That's why I'm
-          taking a nursing course. And I already plan what I'll do after I
-          graduate with this course. Since going to a medicine school is a
-          conflict because I have a little brother that I want to support
-          someday to also help my parents, and especially you need a lot of
-          money to study in a medicine school. I plan to use my nursing skills
-          and to be a nurse, because even though I can't pursue by stepping time
-          to be a doctor, it's really fine because I'm still in the medical
-          field, my dream passion. And I will save enough money to support my
-          studies to achieve my dream of becoming a doctor. I know there's a
-          time for that; time will take time. Life is not a race.
-        </p>
-      `;
-
-      const nursing = `
-        <h2>As a Nursing Student</h2>
-        <p>
-          What I learned in nursing school is to build a strong personality and
-          especially a presence of mind; you need to carry it every day. Because
-          you're saving someone else's life. And of the most importance is being
-          an independent person, because you're able to stand on your own when
-          you care for a patient. I realize every subject I have taken in
-          nursing school is very crucial because it points to someone else's
-          life, and it was very serious when it was talked about. You need to
-          focus and learn it anyway. You need to love your course deeply because
-          it will lead you to be more knowledgeable than you'll expect. And I
-          want to learn more in this course about disease, about first aid and
-          more to save and to help someone sick. I want to be a part of people
-          that help someone who needs help.
-        </p>
-      `;
-    </script>
-  </body>
+ But even now I'm in my dream course. A half of me is a little bit broken for missing my first ever college friend. It's so different from now. It's so far from now. But its really fine because im now ỉn reality a reality of chasing my dream. And I know my BS Biology friend is actually happy to also be chasing their dreams.
+</p> </div>
+`;
+const futurePlans = ` <h2>My Future Plans</h2> <p>
+Since I was a kid, I dreamed to become in a medical field. A doctor
+with a specialization in pediatrics or cardiology. That's why I'm
+taking a nursing course. And I already plan what I'll do after I
+graduate with this course. Since going to a medicine school is a
+conflict because I have a little brother that I want to support
+someday to also help my parents, and especially you need a lot of money to study in a medicine school. I plan to use my nursing skills
+and to be a nurse, because even though I can't pursue by stepping time to be a doctor, it's really fine because I'm still in the medical
+field, my dream passion. And I will save enough money to support my studies to achieve my dream of becoming a doctor. I know there's a time for that; time will take time. Life is not a race.
+</p> `;
+const nursing = `
+<h2>As a Nursing Student</h2> <p>
+What I learned in nursing school is to build a strong personality and especially a presence of mind; you need to carry it every day. Because you're saving someone else's life. And of the most importance is being an independent person, because you're able to stand on your own when you care for a patient. I realize every subject I have taken in
+nursing school is very crucial because it points to someone else's
+life, and it was very serious when it was talked about. You need to
+focus and learn it anyway. You need to love your course deeply because it will lead you to be more knowledgeable than you'll expect. And I
+want to learn more in this course about disease, about first aid and
+more to save and to help someone sick. I want to be a part of people that help someone who needs help.
+</p> `;
+</script> </body>
 </html>
-
